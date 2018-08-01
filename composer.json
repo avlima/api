@@ -1,5 +1,5 @@
 {
-    "name": "avlima/dingo_api",
+    "name": "avlima/dingo-api",
     "description": "A fork from a RESTful API package for the Laravel and Lumen frameworks without auth with query.",
     "keywords": [
         "api",
