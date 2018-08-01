@@ -69,9 +69,9 @@ class JWT extends Authorization
 
             $token = $this->parseAuthorizationHeader($request);
         } catch (Exception $exception) {
-            if (! $token = $request->query('token', false)) {
+            //if (! $token = $request->query('token', false)) {
                 throw $exception;
-            }
+            //}
         }
 
         return $token;
