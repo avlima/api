@@ -104,6 +104,11 @@ class Json extends Format
      */
     protected function encode($content)
     {
+        // Prints the status_code in the body of the response
+        if (empty($content['status_code'])) {
+            $content['status_code'] = $this->response->status();
+        }
+        
         $jsonEncodeOptions = [];
 
         // Here is a place, where any available JSON encoding options, that
